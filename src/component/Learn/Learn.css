@@ -1,0 +1,123 @@
+ .near-left {
+     width: 70%; /* 示例宽度 */
+     position: relative;
+     left: 10%;
+ }
+
+ .near-right{
+     position: absolute;
+     top: 14px;
+     right: 0
+ }
+
+ .tab-container {
+     background: rgba(73,118,107,0.2);
+     position: relative;
+     left: 10%;
+     width: 70%;
+     display: flex;
+     overflow-x: auto;
+     white-space: nowrap;
+     padding: 10px;
+     border-bottom: 1px solid #ccc;
+ }
+ .tab {
+     padding: 10px 20px;
+     text-decoration: none;
+     color: #000000E0;
+     margin-right: 10px;
+     position: relative;
+     font-size: 16px; /* 字体大小 */
+     font-weight: 800; /* 字体粗细 */
+ }
+ .tab:hover {
+     color: #49766b;
+ }
+ .tab.active {
+     color: #49766b;
+ }
+ .tab::after {
+     content: '';
+     position: absolute;
+     bottom: -1px;
+     left: 0;
+     width: 100%;
+     height: 2px;
+     background-color: #49766b;
+     display: none;
+ }
+ .tab.active::after,
+ .tab:hover::after {
+     display: block;
+ }
+
+
+ .left {
+     width: 10%;
+     position: fixed;
+     left: 0;
+     height: 100%;
+     border-style: hidden;
+ }
+ @keyframes downChange {
+     0% {
+
+     }
+     100% {
+     /*scale(1.5)*/
+         transform: translateY(-620px) rotate(360deg) ;
+         border-radius: 50%;
+         background-color: rgba(73,118,107,1);
+     }
+ }
+ .leftAnimation {
+     position: absolute;
+     left: 20%;
+     bottom: 10%;
+     width: 50%;
+     height: 0;
+     padding-bottom: 50%;
+     background-color: rgba(73,118,107,0.2);
+     animation-name: downChange;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+ }
+
+ .right{
+     /*background: rgba(0, 255, 127, 0.1);*/
+     border-style: hidden;
+     position: fixed;
+     height: 100%;
+     right: 0;
+     width: 20%;
+ }
+ .bg {
+     /*position: absolute;*/
+     background-image: url("./bg.png");
+     background-attachment: fixed;
+     height:100%;
+     width:100%;
+     overflow: hidden;
+     background-size:cover;
+ }
+
+ .homeBg {
+     /*position: absolute;*/
+     background-image: url("./图片1.png");
+     background-attachment: fixed;
+     height:100%;
+     width:100%;
+     overflow: hidden;
+     background-size:cover;
+ }
+
+ .book-container {
+
+ }
+
+
+
+
+

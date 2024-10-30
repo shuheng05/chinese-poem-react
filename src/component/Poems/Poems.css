@@ -1,0 +1,54 @@
+.near-left {
+    width: 70%; /* 示例宽度 */
+    position: relative;
+    left: 10%;
+}
+
+/*.bg{*/
+/*    background: #8e9eab;  !* fallback for old browsers *!*/
+/*    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  !* Chrome 10-25, Safari 5.1-6 *!*/
+/*    background: linear-gradient(to right, #eef2f3, #8e9eab); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+/*}*/
+.near-right{
+    position: relative;
+    /*top: 70px;*/
+    right: 0;
+    width: 20%;
+}
+
+.outer {
+}
+.list {
+}
+
+.outer:hover {
+    transform: scale(1.1,1.1);
+    /*transform: rotate(360deg);*/
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-btn-primary {
+    color: #fff;
+    background: #49766b;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-input-outlined {
+    background: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #49766b;
+}
+
+:where(.css-qnu6hi).ant-btn-primary {
+    color: #ffffff;
+    background: #49766b;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+
+.
+
+
+
+
+

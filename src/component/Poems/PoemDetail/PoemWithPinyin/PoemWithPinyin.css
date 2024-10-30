@@ -1,0 +1,55 @@
+/* PoemWithPinyin.css */
+
+.poem-with-pinyin {
+    display: flex;
+    flex-direction: column; /* 将每一句诗垂直排列 */
+}
+
+.poem-sentence {
+    display: inline-flex; /* 使用 inline-flex 来保证句子在同一行 */
+    align-items: flex-end; /* 文字对齐底部 */
+    margin-bottom: 10px; /* 句子之间的间距 */
+}
+
+.pinyin-hanzi-pair {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pinyin {
+    font-size: 14px;
+    margin-bottom: 2px;
+    visibility: visible; /* 默认显示拼音 */
+}
+
+.hanzi {
+    font-size: 20px;
+    position: relative;
+}
+
+/* 针对标点符号的样式 */
+.punctuation .hanzi {
+    font-size: 16px;
+    position: relative;
+    margin-left: 1px; /* 抵消前一个元素的右边距 */
+}
+
+.pinyin-hanzi-pair.punctuation .pinyin {
+    display: none;
+}
+
+/* 设置包含汉字的元素的宽度 */
+.pinyin-hanzi-pair:not(.punctuation) {
+    width: 46px; /* 固定宽度 */
+}
+
+/* 当不显示拼音时的样式 */
+.poem-with-pinyin:not(.showPinyin) .pinyin-hanzi-pair {
+    margin-right: 0; /* 移除右边距 */
+    width: auto; /* 不固定宽度 */
+}
+
+.poem-with-pinyin:not(.showPinyin) .pinyin {
+    display: none; /* 隐藏拼音 */
+}

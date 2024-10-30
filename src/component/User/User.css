@@ -1,0 +1,54 @@
+.logoAvatar {
+    background-image: url("./static/img/山水.jpg");
+}
+.userBg {
+    /*position: absolute;*/
+    /*background-image: url("./static/img/图片1.png");*/
+    /*background-attachment: fixed;*/
+    /*height:100%;*/
+    /*width:100%;*/
+    /*overflow: hidden;*/
+    /*background-size:cover;*/
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    /*background-color: #ecf0f3;*/
+    /*background-image: linear-gradient(to top, #49766b 20%, #dbe4a5 80%);*/
+
+    color: #a0a5a8;
+}
+
+.userHomeBg {
+    /*position: absolute;*/
+    background-image: url("./static/img/bg.png");
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-size:cover;
+}
+
+.buttonUSer {
+    color: white;
+    margin: 7px;
+    padding: 2px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(100% - 20px);
+    /*background: #dbe4a5;*/
+    background-image: linear-gradient(70deg, #dbe4a5 5%, #49766b 100%);
+}
+.buttonUSer:hover {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.imgUser {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
